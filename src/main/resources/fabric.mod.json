@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "ellygg",
+  "version": "v0.2_mc1.18",
+  "name": "Elly's Good Gaming Minecraft",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/EllyGG/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ellygg.minecraft.client.EllyGGClient"
+    ],
+    "main": [
+      "ellygg.minecraft.EllyGG"
+    ]
+  },
+  "mixins": [
+    "EllyGG.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.5",
+    "fabric": "*",
+    "minecraft": "1.18"
+  }
+}

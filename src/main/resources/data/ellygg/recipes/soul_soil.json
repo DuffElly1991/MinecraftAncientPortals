@@ -4,15 +4,12 @@
   [
     {
       "item": "minecraft:soul_sand"
-    },
-    {
-      "item": "minecraft:dirt"
     }
   ],
 
   "result":
   {
     "item": "minecraft:soul_soil",
-    "count": 2
+    "count": 1
   }
 }

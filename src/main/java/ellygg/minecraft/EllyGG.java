@@ -30,14 +30,10 @@ public class EllyGG implements ModInitializer {
                 Might replace with lightning strike interaction like copper has
                     Downside would be that lightning isn't consistently accessible
 
-            - 2 soul soil = soul sand + dirt
+            - soul soil = soul sand
                 Unsure about this recipe, might change
                 Wanted easy way to convert soul sand to soul soil
                     Vanilla method is crafting soul campfire with soul sand, placing it, mining it - bad, tedious, probably unintended
-                Dirt seemed logical ingredient as it is in soil
-                Not sure about 1 sand turning into 2 soil
-                Turning 2 blocks into 1 block would also be weird as soul soil doesn't seem like it would be twice as dense as soul sand
-                Could just go with 1 soul sand = 1 soul soil and vice versa
 
             - 8 clay = 8 dirt + water bucket
                 Temporary recipe, will be removed with wild update's mud

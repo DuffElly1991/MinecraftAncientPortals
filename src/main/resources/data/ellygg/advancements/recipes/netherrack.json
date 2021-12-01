@@ -1,0 +1,31 @@
+{
+	"parent": "minecraft:recipes/root"
+	,
+	"criteria": {
+		"has_blaze_powder": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{ "items": ["minecraft:blaze_powder"] }
+				]
+			}
+		},
+		"has_gravel": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions":{
+				"items":[
+					{ "items": ["minecraft:gravel"] }
+				]
+			}
+		}
+	}
+	,
+	"requirements": [
+		["has_blaze_powder"],
+		["has_gravel"]
+	]
+	,
+	"rewards": {
+		"recipes": ["ellygg:netherrack"]
+	}
+}

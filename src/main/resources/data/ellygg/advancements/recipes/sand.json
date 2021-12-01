@@ -1,0 +1,31 @@
+{
+	"parent": "minecraft:recipes/root"
+	,
+	"criteria": {
+		"has_soul_sand": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{ "items": ["minecraft:soul_sand"] }
+				]
+			}
+		},
+		"has_prismarine_crystals": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{ "items": ["minecraft:prismarine_crystals"] }
+				]
+			}
+		}
+	}
+	,
+	"requirements": [
+		["has_prismarine_crystals"],
+		["has_soul_sand"]
+	]
+	,
+	"rewards": {
+		"recipes": ["ellygg:sand"]
+	}
+}

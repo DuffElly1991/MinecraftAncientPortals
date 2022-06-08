@@ -2,11 +2,11 @@
 	"parent": "minecraft:recipes/root"
 	,
 	"criteria": {
-		"has_blaze_powder": {
+		"has_magma_cream": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
-					{ "items": ["minecraft:blaze_powder"] }
+					{ "items": ["minecraft:magma_cream"] }
 				]
 			}
 		},
@@ -21,7 +21,7 @@
 	}
 	,
 	"requirements": [
-		["has_blaze_powder"],
+		["has_magma_cream"],
 		["has_gravel"]
 	]
 	,

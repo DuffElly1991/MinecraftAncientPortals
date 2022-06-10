@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "id": "ellygg",
-  "version": "0.4.1_1.19.*",
-  "name": "Elly's Good Gaming Minecraft",
-  "description": "",
-  "authors": [],
+  "version": "0.4.2_1.19.*",
+  "name": "Good Gaming Minecraft",
+  "description": "Features that should be in vanilla minecraft",
+  "authors": ["EllyGG"],
   "contact": {},
   "license": "APACHE",
-  "icon": "assets/EllyGG/icon.png",
+  "icon": "assets/ellygg/logo2.png",
   "environment": "*",
   "entrypoints": {
     "client": [
@@ -18,7 +18,7 @@
     ]
   },
   "mixins": [
-    "EllyGG.mixins.json"
+    "ellygg.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.6",

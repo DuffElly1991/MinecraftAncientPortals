@@ -24,6 +24,7 @@ blocks = []
 for colour in colours:
 	blocks.append(colour + "_stained_glass")
 	blocks.append(colour + "_stained_glass_pane")
+	blocks.append(colour + "_terracotta")
 
 #Build the recipe files
 for inputBlock in blocks:
@@ -32,6 +33,9 @@ for inputBlock in blocks:
 		resultingBlock = "glass"
 	elif(inputBlock.endswith("_glass_pane")):
 		resultingBlock = "glass_pane"
+	elif(inputBlock.endswith("_terracotta")):
+		resultingBlock = "terracotta"
+
 	fileName = "/home/elly/Documents/VS code/EllyGGMinecraft/bin/main/data/ellygg/recipes/" + resultingBlock + "__from__" + inputBlock + ".json"
 	fileContents = "\n".join([
 		"{",
@@ -56,7 +60,7 @@ for inputBlock in blocks:
 	file.flush()
 	file.close()
 
-resultingBlocks = ["glass", "glass_pane"]
+resultingBlocks = ["glass", "glass_pane", "terracotta"]
 
 #Build the advancements to unlock recipes
 for resultingBlock in resultingBlocks:

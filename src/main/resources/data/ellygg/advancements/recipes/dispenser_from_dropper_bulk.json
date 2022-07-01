@@ -2,12 +2,12 @@
 	"parent": "minecraft:recipes/root",
 
 	"criteria": {
-		"has_soul_soil": {
+		"has_dropper": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
 					{
-						"items": ["minecraft:soul_soil"]
+						"items": ["minecraft:dropper"]
 					}
 				]
 			}
@@ -15,10 +15,10 @@
 	},
 
 	"requirements": [
-		["has_soul_soil"]
+		["has_dropper"]
 	],
 
 	"rewards": {
-		"recipes": ["ellygg:soul_sand"]
+		"recipes": ["ellygg:dispenser_from_dropper_bulk"]
 	}
 }

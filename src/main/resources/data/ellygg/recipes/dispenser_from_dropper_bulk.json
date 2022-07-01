@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:crafting_shaped",
+
+	"pattern": [
+        " WS",
+        "WDS",
+		" WS"
+    ],
+
+	"key": {
+		"W": {
+			"item": "minecraft:stick"
+		},
+		"D": {
+			"item": "minecraft:dropper"
+		},
+		"S": {
+			"item": "minecraft:string"
+		}
+	},
+
+	"result": {
+		"item": "minecraft:dispenser",
+		"count": 1
+	}
+}

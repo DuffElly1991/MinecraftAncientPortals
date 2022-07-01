@@ -1,6 +1,6 @@
 {
-	"parent": "minecraft:recipes/root"
-	,
+	"parent": "minecraft:recipes/root",
+
 	"criteria": {
 		"has_soul_sand": {
 			"trigger": "minecraft:inventory_changed",
@@ -10,12 +10,12 @@
 				]
 			}
 		}
-	}
-	,
+	},
+
 	"requirements": [
 		["has_soul_sand"]
-	]
-	,
+	],
+
 	"rewards": {
 		"recipes": ["ellygg:soul_soil"]
 	}

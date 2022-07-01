@@ -1,15 +1,14 @@
 {
 	"type": "minecraft:crafting_shapeless",
-	"ingredients":
-	[
-	  {
-		"item": "minecraft:soul_soil"
-	  }
+
+	"ingredients": [
+		{
+			"item": "minecraft:soul_soil"
+		}
 	],
-  
-	"result":
-	{
-	  "item": "minecraft:soul_sand",
-	  "count": 1
+
+	"result": {
+		"item": "minecraft:soul_sand",
+		"count": 1
 	}
-  }
+}

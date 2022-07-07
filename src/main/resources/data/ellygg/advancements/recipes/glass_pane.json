@@ -1,0 +1,36 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_glass_pane": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{ "items": ["minecraft:glass_pane"] }
+				]
+			}
+		}
+	},
+	"requirements": [
+		["has_glass_pane"]
+	],
+	"rewards": {
+		"recipes": [
+			"ellygg:glass_pane__from__white_stained_glass_pane",
+			"ellygg:glass_pane__from__orange_stained_glass_pane",
+			"ellygg:glass_pane__from__magenta_stained_glass_pane",
+			"ellygg:glass_pane__from__light_blue_stained_glass_pane",
+			"ellygg:glass_pane__from__yellow_stained_glass_pane",
+			"ellygg:glass_pane__from__lime_stained_glass_pane",
+			"ellygg:glass_pane__from__pink_stained_glass_pane",
+			"ellygg:glass_pane__from__gray_stained_glass_pane",
+			"ellygg:glass_pane__from__light_gray_stained_glass_pane",
+			"ellygg:glass_pane__from__cyan_stained_glass_pane",
+			"ellygg:glass_pane__from__purple_stained_glass_pane",
+			"ellygg:glass_pane__from__blue_stained_glass_pane",
+			"ellygg:glass_pane__from__brown_stained_glass_pane",
+			"ellygg:glass_pane__from__green_stained_glass_pane",
+			"ellygg:glass_pane__from__red_stained_glass_pane",
+			"ellygg:glass_pane__from__black_stained_glass_pane"
+		]
+	}
+}

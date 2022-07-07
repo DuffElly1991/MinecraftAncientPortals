@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "ellygg_furnace",
+	"ingredients" : [{
+		"item": "minecraft:furnace_minecart",
+		"remainder": { "item": "minecraft:minecart" }
+		}],
+	"result": {
+		"item": "minecraft:furnace",
+		"count": 1
+	}
+}

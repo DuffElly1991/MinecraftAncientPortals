@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "ellygg_terracotta",
+	"ingredients" : [{
+		"item": "minecraft:green_terracotta"
+		}],
+	"result": {
+		"item": "minecraft:terracotta",
+		"count": 1
+	}
+}

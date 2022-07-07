@@ -36,7 +36,7 @@ for inputBlock in blocks:
 	elif(inputBlock.endswith("_terracotta")):
 		resultingBlock = "terracotta"
 
-	fileName = "/home/elly/Documents/VS code/EllyGGMinecraft/bin/main/data/ellygg/recipes/" + resultingBlock + "__from__" + inputBlock + ".json"
+	fileName = "/home/elly/Documents/VS code/EllyGGMinecraft/src/main/resources/data/ellygg/recipes/" + resultingBlock + "__from__" + inputBlock + ".json"
 	fileContents = "\n".join([
 		"{",
 		"\t\"type\": \"minecraft:crafting_shapeless\",",
@@ -64,7 +64,7 @@ resultingBlocks = ["glass", "glass_pane", "terracotta"]
 
 #Build the advancements to unlock recipes
 for resultingBlock in resultingBlocks:
-	fileName = "/home/elly/Documents/VS code/EllyGGMinecraft/bin/main/data/ellygg/advancements/recipes/" + resultingBlock + ".json"
+	fileName = "/home/elly/Documents/VS code/EllyGGMinecraft/src/main/resources/data/ellygg/advancements/recipes/" + resultingBlock + ".json"
 	fileContents = "\n".join([
 		"{",
 		"\t\"parent\": \"minecraft:recipes/root\",",
@@ -86,16 +86,16 @@ for resultingBlock in resultingBlocks:
 	])
 
 	#Add a list of all recipes for the rewards
-	listOfAdvancements = []
+	listOfRecipes = []
 	for inputBlock in blocks:
 		if(inputBlock.endswith(resultingBlock)):
-			listOfAdvancements.append("\t\t\t\"ellygg:" + resultingBlock + "__from__" + inputBlock + "\"")
+			listOfRecipes.append("\t\t\t\"ellygg:" + resultingBlock + "__from__" + inputBlock + "\"")
 	
-	finishedAdvancements = ",\n".join(listOfAdvancements)
+	finishedRecipes = ",\n".join(listOfRecipes)
 
 	fileContents = "\n".join([
 		fileContents,
-		finishedAdvancements,
+		finishedRecipes,
 		"\t\t]",
 		"\t}",
 		"}"

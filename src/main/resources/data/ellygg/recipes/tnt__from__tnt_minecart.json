@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "ellygg_tnt",
+	"ingredients" : [{
+		"item": "minecraft:tnt_minecart",
+		"remainder": { "item": "minecraft:minecart" }
+		}],
+	"result": {
+		"item": "minecraft:tnt",
+		"count": 1
+	}
+}

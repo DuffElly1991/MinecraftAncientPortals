@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "ellygg_glass",
+	"ingredients" : [{
+		"item": "minecraft:light_gray_stained_glass"
+		}],
+	"result": {
+		"item": "minecraft:glass",
+		"count": 1
+	}
+}

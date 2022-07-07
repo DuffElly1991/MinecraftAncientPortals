@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "ellygg_chest",
+	"ingredients" : [{
+		"item": "minecraft:spruce_chest_boat",
+		"remainder": { "item": "minecraft:spruce_boat" }
+		}],
+	"result": {
+		"item": "minecraft:chest",
+		"count": 1
+	}
+}

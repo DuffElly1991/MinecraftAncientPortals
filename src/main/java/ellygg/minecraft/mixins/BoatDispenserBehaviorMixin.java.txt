@@ -1,0 +1,34 @@
+package ellygg.minecraft.mixins;
+
+import net.minecraft.block.dispenser.BoatDispenserBehavior;
+import net.minecraft.entity.vehicle.BoatEntity;
+import net.minecraft.util.math.BlockPointer;
+import net.minecraft.item.ItemStack;
+
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.*;
+
+@Mixin(BoatDispenserBehavior.class)
+class BoatDispenserBehaviorMixin /*extends BoatDispenserBehavior*/
+{
+/* 	public BoatDispenserBehaviorMixin(BoatEntity.Type type) {
+        super(type, false);
+    }
+
+    public BoatDispenserBehaviorMixin(BoatEntity.Type boatType, boolean chest) {
+        super(boatType, chest);
+    }*/
+
+	//Replace the section that is checking if there is water underneath the air with a method that returns true
+	//This will let a dispenser place a boat in air no matter what is below the air
+	@Redirect(
+            method = "dispenseSilently(Lnet/minecraft/util/math/BlockPointer;Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;",
+            at = @At(value = "INVOKE",
+                    /*target = "Lnet/minecraft/block/dispenser/BoatDispenserBehaviour;world.getFluidState(blockPos.down()).isIn(FluidTags.WATER)")*/
+					target = "world.getFluidState(blockPos.down()).isIn(FluidTags.WATER)")
+    )
+	private boolean ignoreCheckForWater()
+	{
+		return true;
+	}
+}

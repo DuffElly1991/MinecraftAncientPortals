@@ -1,0 +1,21 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_tnt": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{ "items": ["minecraft:tnt"] }
+				]
+			}
+		}
+	},
+	"requirements": [
+		["has_tnt"]
+	],
+	"rewards": {
+		"recipes": [
+			"ellygg:tnt__from__tnt_minecart"
+		]
+	}
+}

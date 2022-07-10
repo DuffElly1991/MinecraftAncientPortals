@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "id": "ellygg",
   "version": "0.6_1.19",
-  "name": "Good Gaming Minecraft",
-  "description": "Features that should be in vanilla minecraft",
+  "name": "Ancient Portals",
+  "description": "Adds long forgotten portals to ancient cities, rumoured to go to places of unimaginable wealth",
   "authors": ["EllyGG"],
   "contact": {},
   "license": "APACHE",
-  "icon": "assets/ellygg/logo2.png",
+  "icon": "assets/ellygg/logo3.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "ellygg.minecraft.client.EllyGGClient"
+      "ellygg.ancientportals.client.MainClient"
     ],
     "main": [
-      "ellygg.minecraft.EllyGG"
+      "ellygg.ancientportals.Main"
     ]
   },
   "mixins": [

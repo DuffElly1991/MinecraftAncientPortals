@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "id": "ellygg",
-  "version": "0.6_1.19",
+  "id": "ellyggancientportals",
+  "version": "0.1_1.19",
   "name": "Ancient Portals",
   "description": "Adds long forgotten portals to ancient cities, rumoured to go to places of unimaginable wealth",
   "authors": ["EllyGG"],
   "contact": {},
   "license": "APACHE",
-  "icon": "assets/ellygg/logo3.png",
+  "icon": "assets/ellygg/logo.png",
   "environment": "*",
   "entrypoints": {
     "client": [
@@ -18,7 +18,7 @@
     ]
   },
   "mixins": [
-    "ellygg.mixins.json"
+    "ancientportals.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.6",

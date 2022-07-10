@@ -29,7 +29,7 @@ class BoatDispenserBehaviorMixin extends ItemDispenserBehavior
         ServerWorld world = pointer.getWorld();
 
         double x = pointer.getX() + (double)((float)direction.getOffsetX() * 1.5f);
-        double y = pointer.getY() + (double)((float)direction.getOffsetY() * 1f -0.5f);
+        double y = pointer.getY() + (double)((float)direction.getOffsetY() * 1f - 0.5f);
         double z = pointer.getZ() + (double)((float)direction.getOffsetZ() * 1.5f);
 
 		BlockPos blockPos = pointer.getPos().offset(direction);

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "ellyggancientportals",
-  "version": "0.1_1.19",
+  "id": "ancientportals",
+  "version": "0.2_1.19",
   "name": "Ancient Portals",
   "description": "Adds long forgotten portals to ancient cities, rumoured to go to places of unimaginable wealth",
   "authors": ["EllyGG"],

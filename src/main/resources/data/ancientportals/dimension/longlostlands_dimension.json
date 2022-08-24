@@ -1,11 +1,17 @@
 {
-	"type": "minecraft:overworld",
+	"type": "ancientportals:longlostlands_dimensiontype",
 	"generator": {
 		"type": "minecraft:noise",
-		"settings": "minecraft:overworld",
+		"settings": "ancientportals:longlostlands_worldgen_noisesettings",
 		"biome_source": {
-			"type": "minecraft:fixed",
-			"biome": "minecraft:plains"
+			"type": "minecraft:checkerboard",
+			"scale": 4,
+			"biomes": [
+				"minecraft:desert",
+				"minecraft:ice_spikes",
+				"minecraft:end_highlands",
+				"minecraft:soul_sand_valley"
+			]
 		}
 	}
 }
